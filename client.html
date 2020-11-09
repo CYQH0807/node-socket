@@ -4,13 +4,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>WebSocket Echo Demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="./bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="./bootstrap-3.3.5/js/jquery-1.12.3.min.js"></script>
-        <script src="./bootstrap-3.3.5/js/bootstrap.min.js"></script>
-        <script src="./ReconnectingWebSocket.js"></script>
+        <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.min.js">
+        </script>
         <script>
             //建立连接
-            var ws = new ReconnectingWebSocket("ws://47.100.200.134:1234/"+getQueryVariable('type'));
+            var ws = new ReconnectingWebSocket("ws://47.100.200.134:1234/" + getQueryVariable('type'));
             ws.onopen = function (e) {
                 console.log('Connection to server opened');
             }
