@@ -1,0 +1,23 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swallowss/node-socket.git"
+  },
+  "author": "池樱千幻",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swallowss/node-socket/issues"
+  },
+  "homepage": "https://github.com/Swallowss/node-socket#readme",
+  "dependencies": {
+    "node-uuid": "^1.4.8",
+    "ws": "^7.1.2"
+  }
+}
